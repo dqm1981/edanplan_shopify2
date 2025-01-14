@@ -1,0 +1,24 @@
+<h1 class="custom">
+  {{ section.settings.title }}
+</h1>
+
+{% schema %}
+{
+  "name": "my_custom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default":"default content",
+      "label": "please input your content"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .custom{
+    font-size:50px;
+    color:red;
+  }
+{% endstyle %}
